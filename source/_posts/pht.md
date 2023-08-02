@@ -6,9 +6,7 @@ tags:
 
 #1 phone
 
-tes
 
-![](part.jpg)
 
 ds
 

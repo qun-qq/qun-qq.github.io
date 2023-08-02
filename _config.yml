@@ -7,8 +7,8 @@ title: Hexo
 subtitle: ''
 description: ''
 keywords:
-author: John Doe
-language: en
+author: CYQ
+language: zh-CN
 timezone: ''
 
 # URL
@@ -89,7 +89,7 @@ updated_option: 'mtime'
 
 # Pagination
 ## Set per_page to 0 to disable pagination
-per_page: 10
+per_page: 5
 pagination_dir: page
 
 # Include / Exclude file(s)
@@ -101,7 +101,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: hexo-theme-matery-master
+theme: Sw-blog-master
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
@@ -109,3 +109,7 @@ deploy:
   type: git
   repo: https://github.com/qun-qq/qun-qq.github.io.git
   branch: main
+
+# search:
+#   path: search.json
+#   field: post
