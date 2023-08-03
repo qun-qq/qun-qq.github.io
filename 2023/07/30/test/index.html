@@ -3,22 +3,22 @@
 <head>
   <meta charset="utf-8">
   
-  <title>test | Hexo</title>
+  <title>test | cyqun.top</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Testthis is a test">
+  <meta name="description" content="this is a test">
 <meta property="og:type" content="article">
 <meta property="og:title" content="test">
 <meta property="og:url" content="https://qun-qq.github.io/2023/07/30/test/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Testthis is a test">
+<meta property="og:site_name" content="cyqun.top">
+<meta property="og:description" content="this is a test">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-07-30T03:16:36.000Z">
-<meta property="article:modified_time" content="2023-07-31T09:10:51.694Z">
+<meta property="article:modified_time" content="2023-08-03T05:44:02.874Z">
 <meta property="article:author" content="CYQ">
 <meta property="article:tag" content="qq">
 <meta name="twitter:card" content="summary">
   
-    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="cyqun.top" type="application/atom+xml">
   
   
     <link rel="icon" href="/http://oayoilchh.bkt.clouddn.com/2016/07/27/18:05:26%20">
@@ -67,13 +67,14 @@
             <img lazy-src="/img/head.jpg" class="js-avatar">
             
         </a>
+
         <hgroup>
           <h1 class="header-author"><a href="/"></a></h1>
         </hgroup>
         
         
             <form>
-                <input type="text" class="st-default-search-input search" id="search" placeholder="搜索一下" autocomplete="off">
+                <input type="text" class="st-default-search-input search" id="search" placeholder="搜索" autocomplete="off">
             </form>
             <div id="local-search-result"></div>
         
@@ -313,7 +314,7 @@
 
           
                   
-                <h1 id="Test"><a href="#Test" class="headerlink" title="Test"></a>Test</h1><h2 id="this-is-a-test"><a href="#this-is-a-test" class="headerlink" title="this is a test"></a>this is a test</h2>
+                <h1 id=""><a href="#" class="headerlink" title=""></a></h1><h2 id="this-is-a-test"><a href="#this-is-a-test" class="headerlink" title="this is a test"></a>this is a test</h2>
               
         
       
@@ -326,7 +327,7 @@
         <p><span>本文标题:</span><a href="/2023/07/30/test/">test</a></p>
         <p><span>文章作者:</span><a href="/" title="访问  的个人博客"></a></p>
         <p><span>发布时间:</span>2023年07月30日 - 11时16分</p>
-        <p><span>最后更新:</span>2023年07月31日 - 17时10分</p>
+        <p><span>最后更新:</span>2023年08月03日 - 13时44分</p>
         <p>
             <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
         </p>
@@ -358,35 +359,19 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Test"><span class="toc-number">1.</span> <span class="toc-text">Test</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#this-is-a-test"><span class="toc-number">1.1.</span> <span class="toc-text">this is a test</span></a></li></ol></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">1.</span> <span class="toc-text"></span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#this-is-a-test"><span class="toc-number">1.1.</span> <span class="toc-text">this is a test</span></a></li></ol></li></ol>
 </div>
-<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
 
 
 <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="https://cdn.bootcdn.net/ajax/libs/require.js/2.3.6/require.min.js"></script>
 
 <script>
-    var valueHide = "隐藏目录";
-    var valueShow = "显示目录";
-
-    if ($(".left-col").is(":hidden")) {
-        $("#tocButton").attr("value", valueShow);
-    }
-    $("#tocButton").click(function() {
-        if ($("#toc").is(":hidden")) {
-            $("#tocButton").attr("value", valueHide);
-            $("#toc").slideDown(320);
-        }
-        else {
-            $("#tocButton").attr("value", valueShow);
-            $("#toc").slideUp(350);
-        }
-    })
-    if ($(".toc").length < 1) {
-        $("#toc, #tocButton").hide();
-    }
+    var headerElement = document.getElementById('header');
+    var tocElement = document.getElementById('toc');
+    headerElement.appendChild(tocElement);
 </script>
+
 
 
 
@@ -473,14 +458,14 @@
                 &copy; 2023 CYQ
             </div>
             <div class="footer-right">
-                <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="http://bestwing.me" target="_blank">Sw'blog</a> by Swing
+                <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme
             </div>
         </div>
         
             <div class="visit">
                 
                     <span id="busuanzi_container_site_pv" style='display:none'>
-                        <span id="site-visit" >海贼到访数: 
+                        <span id="site-visit" >访问量: 
                             <span id="busuanzi_value_site_uv"></span>
                         </span>
                     </span>

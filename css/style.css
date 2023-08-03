@@ -251,7 +251,7 @@ a {
 #container .left-col {
   background: url("../img/bg.jpg") #515457;
   width: 300px;
-  position: fixed;
+  position: absolute;
   opacity: 1;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
@@ -2061,7 +2061,7 @@ a {
   width: 100%;
   overflow: hidden;
   color: #fff;
-  min-height: 300px;
+  min-height: 200px;
   font-size: 14px;
 }
 #header .switch-area .switch-wrap {
@@ -2224,7 +2224,7 @@ a {
   text-align: center;
 }
 #scroll {
-  right: 0;
+  right: 10px;
 }
 .scroll {
   z-index: 999;
@@ -3029,7 +3029,7 @@ a.gitment-editor-footer-tip:hover {
   line-height: 35px;
   margin-bottom: 20px;
   text-align: center;
-  font-size: 26px;
+  font-size: 35px;
   -webkit-transition: color 0.3s;
   -moz-transition: color 0.3s;
   -o-transition: color 0.3s;
@@ -3282,23 +3282,13 @@ a.gitment-editor-footer-tip:hover {
   background: #3f3f3f;
 }
 .toc-article {
-  position: fixed;
+  position: relative;
   width: 256px;
-  left: 0;
-  top: 360px;
+  left: 0px;
   color: #999;
-  bottom: 0.7em;
-  padding: 10px;
-  margin-left: 0em;
-  margin: 20px 10px 10px 10px;
-  background: #3f3f3f;
-  border: 1px solid #080808;
-  border-radius: 6px;
-  overflow: auto;
-  -webkit-border-radius: 2.8%;
 }
 .post-list li {
-  margin-left: 20px;
+  margin-left: 0px;
 }
 .post-list li a {
   color: #999;
@@ -3330,7 +3320,7 @@ a.gitment-editor-footer-tip:hover {
 #toc .toc-title {
   font-weight: bold;
   color: #999;
-  text-align: center;
+  text-align: left;
   display: block;
 }
 #toc .toc {
@@ -3344,8 +3334,9 @@ a.gitment-editor-footer-tip:hover {
   margin-left: 0;
 }
 #toc .toc-child {
-  padding-left: 1.25em;
+  padding-left: 0;
   margin: 4px 0;
+  text-align: left;
 }
 #toc .toc-link:hover {
   background: rgba(158,188,226,0.21);
