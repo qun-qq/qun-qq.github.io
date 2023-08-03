@@ -251,13 +251,15 @@ a {
 #container .left-col {
   background: url("../img/bg.jpg") #515457;
   width: 300px;
-  position: absolute;
+  position: fixed;
   opacity: 1;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
   -ms-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
   height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 #container .left-col .overlay {
   width: 100%;
@@ -272,18 +274,16 @@ a {
   padding-top: 10px;
   text-align: center;
   margin: 40px auto 0;
-  overflow: auto;
   position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+/*
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%,-50%);
+            -moz-transform: translate(-50%,-50%);
+            -o-transform: translate(-50%,-50%);
+            -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+            */
 }
 #container .mid-col {
   position: absolute;
@@ -3283,8 +3283,9 @@ a.gitment-editor-footer-tip:hover {
 }
 .toc-article {
   position: relative;
-  width: 256px;
-  left: 0px;
+  width: 100%;
+  left: 10px;
+  height: auto;
   color: #999;
 }
 .post-list li {
@@ -3324,8 +3325,8 @@ a.gitment-editor-footer-tip:hover {
   display: block;
 }
 #toc .toc {
-  padding: 10px;
-  padding-right: 0;
+  text-align: left;
+  padding: 0;
 }
 #toc .toc li {
   list-style-type: none;
@@ -3334,7 +3335,7 @@ a.gitment-editor-footer-tip:hover {
   margin-left: 0;
 }
 #toc .toc-child {
-  padding-left: 0;
+  padding-left: 10px;
   margin: 4px 0;
   text-align: left;
 }
