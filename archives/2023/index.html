@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/archives/2023/index.html">
+<meta property="og:url" content="https://qun-qq.github.io/archives/2023/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="CYQ">
@@ -55,10 +55,11 @@
     <div class="overlay"></div>
 <div class="intrude-less">
     <header id="header" class="inner">
-        <script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+        <script src="https://cdn.bootcdn.net/ajax/libs/require.js/2.3.6/require.min.js"></script>
+        <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <a href="/" class="profilepic">
             
-            <img lazy-src="img/head.jpg" class="js-avatar">
+            <img lazy-src="/img/head.jpg" class="js-avatar">
             
         </a>
         <hgroup>
@@ -67,7 +68,7 @@
         
         
             <form>
-                <input type="text" class="st-default-search-input search" id="local-search-input" placeholder="搜索一下" autocomplete="off">
+                <input type="text" class="st-default-search-input search" id="search" placeholder="搜索一下" autocomplete="off">
             </form>
             <div id="local-search-result"></div>
         
@@ -83,7 +84,7 @@
                         }
                         return matchData;
                     }
-                    var $input = $('#local-search-input');
+                    var $input = $('#search');
                     var $resultContent = $('#local-search-result');
                     $input.keyup(function(){
                         $.ajax({
@@ -163,15 +164,13 @@
                     <nav class="header-menu">
                         <ul>
                         
-                            <li><a  style="font-size: 20px;" target="_blank" rel="noopener" href="http://bestwing.me">博客首页</a></li>
+                            <li><a  style="font-size: 20px;" href="/">博客首页</a></li>
                         
                             <li><a  style="font-size: 20px;" href="/archives">文章归档</a></li>
                         
-                            <li><a  style="font-size: 20px;" href="/CTFStudy">学习导航</a></li>
+                            <li><a  style="font-size: 20px;" href="/categories">分类</a></li>
                         
-                            <li><a  style="font-size: 20px;" href="/PWNABLE">PWNABLE</a></li>
-                        
-                            <li><a  style="font-size: 20px;" href="/resume">个人简历</a></li>
+                            <li><a  style="font-size: 20px;" href="/tags">标签</a></li>
                         
                         </ul>
                     </nav>
@@ -192,7 +191,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <a href="/tags/qq/" style="font-size: 10px;">qq</a>
+                        <a href="/tags/phote/" style="font-size: 10px;">phote</a> <a href="/tags/qq/" style="font-size: 20px;">qq</a>
                     </div>
                 </section>
                 
@@ -200,7 +199,7 @@
                 <section class="switch-part switch-part3">
                     <div id="js-friends">
                     
-                      <a target="_blank"  class="main-nav-link switch-friends-link" href="http://google.com">Yllen</a>
+                      <a target="_blank"  class="main-nav-link switch-friends-link" href="http://google.com">Google</a>
                     
                     </div>
                 </section>
@@ -238,15 +237,13 @@
             <nav class="header-menu">
                 <ul>
                 
-                    <li><a target="_blank" rel="noopener" href="http://bestwing.me">博客首页</a></li>
+                    <li><a href="/">博客首页</a></li>
                 
                     <li><a href="/archives">文章归档</a></li>
                 
-                    <li><a href="/CTFStudy">学习导航</a></li>
+                    <li><a href="/categories">分类</a></li>
                 
-                    <li><a href="/PWNABLE">PWNABLE</a></li>
-                
-                    <li><a href="/resume">个人简历</a></li>
+                    <li><a href="/tags">标签</a></li>
                 
                 <div class="clearfix"></div>
                 </ul>
@@ -299,6 +296,10 @@
           
 
           
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/phote/" rel="tag">phote</a></li></ul>
+    </div>
+
         </div>
         <div class="clearfix"></div>
     </header>
@@ -492,7 +493,8 @@
 
     </div>
     
-<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/require.js/2.3.6/require.min.js"></script>
 
 
 <script src="/js/main.js"></script>
@@ -525,7 +527,9 @@
 </script>
 
     <button class="hide-labels">TAG 开关</button>
-    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js">
+    <script src="https://cdn.bootcdn.net/ajax/libs/require.js/2.3.6/require.min.js">
+    </script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.9.1/jquery.min.js">
     </script>
     <script>
         $(document).ready(function() {
@@ -535,7 +539,7 @@
         });
     </script>
 
-<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>
 
   <script language="javascript">
