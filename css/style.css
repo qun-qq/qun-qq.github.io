@@ -2019,11 +2019,11 @@ a {
     transform: scale(1, 1);
   }
 }
-#header .header-subtitle {
+#header .header-aboutme {
   text-align: center;
   color: #fff;
-  font-size: 14px;
-  line-height: 25px;
+  font-size: 28px;
+  line-height: 56px;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -2061,6 +2061,7 @@ a {
   width: 100%;
   overflow: hidden;
   color: #fff;
+  top: 12px;
   min-height: 200px;
   font-size: 14px;
 }
@@ -2160,6 +2161,10 @@ a {
 #header .header-nav .social a.QQ {
   background: url("../img/qq.png") center no-repeat #00abff;
   border: 1px solid #00abff;
+}
+#header .header-nav .social a.leetcode {
+  background: url("../img/lcc.png") center no-repeat #fff;
+  border: 1px solid #fff;
 }
 #header .header-nav .social a.wechat {
   background: url("../img/wechat.png") center no-repeat #51c332;
@@ -2322,8 +2327,9 @@ color
 }
 #search {
   width: 68%;
-  height: 18px;
+  height: 32px;
   margin-top: 1px;
+  text-align: center;
   color: #fff;
   padding: 0;
   font-family: inherit;
@@ -2359,6 +2365,14 @@ color
   opacity: 1;
   -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.3);
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+#search-result-title {
+  width: 50%;
+  top: 50px;
+}
+#search-result-list {
+  top: 10px;
+  font-size: 54px;
 }
 .archives-wrap {
   position: relative;

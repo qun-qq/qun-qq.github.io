@@ -66,12 +66,16 @@
         <hgroup>
           <h1 class="header-author"><a href="/"></a></h1>
         </hgroup>
+
         
+        <p class="header-aboutme">兴趣使然</p>
+        
+
         
             <form>
-                <input type="text" class="st-default-search-input search" id="search" placeholder="搜索" autocomplete="off">
+                <input type="text" class="search" id="search" placeholder="搜索" autocomplete="off">
             </form>
-            <div id="local-search-result"></div>
+            <div id="local-search-result" class = "local-search-result"></div>
         
         
             <script type="text/javascript">
@@ -119,55 +123,17 @@
                 })();
             </script>
         
-        
-            <div id="switch-btn" class="switch-btn">
-                <div class="icon">
-                    <div class="icon-ctn">
-                        <div class="icon-wrap icon-house" data-idx="0">
-                            <div class="birdhouse"></div>
-                            <div class="birdhouse_holes"></div>
-                        </div>
-                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
-                            <div class="ribbon"></div>
-                        </div>
-                        
-                        <div class="icon-wrap icon-link hide" data-idx="2">
-                            <div class="loopback_l"></div>
-                            <div class="loopback_r"></div>
-                        </div>
-                        
-                        
-                        <div class="icon-wrap icon-me hide" data-idx="3">
-                            <div class="user"></div>
-                            <div class="shoulder"></div>
-                        </div>
-                        
-                    </div>
-                </div>
-                <div class="tips-box hide">
-                    <div class="tips-arrow"></div>
-                    <ul class="tips-inner">
-                        <li>菜单</li>
-                        <li>标签</li>
-                        
-                        <li>友情链接</li>
-                        
-                        
-                        <li>关于我</li>
-                        
-                    </ul>
-                </div>
-            </div>
-        
+
+
         <div id="switch-area" class="switch-area">
             <div class="switch-wrap">
                 <section class="switch-part switch-part1">
                     <nav class="header-menu">
                         <ul>
                         
-                            <li><a  style="font-size: 20px;" href="/">博客首页</a></li>
+                            <li><a  style="font-size: 20px;" href="/">首页</a></li>
                         
-                            <li><a  style="font-size: 20px;" href="/archives">文章归档</a></li>
+                            <li><a  style="font-size: 20px;" href="/archives">归档</a></li>
                         
                             <li><a  style="font-size: 20px;" href="/categories">分类</a></li>
                         
@@ -178,40 +144,15 @@
                     <nav class="header-nav">
                         <ul class="social">
                             
-                                <a class="fl mail"  target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=kvH99PT39-Dn_efS5PvivOPjvPH9-w" title="mail">mail</a>
+                                <a class="fl github"  target="_blank" href="https://github.com/qun-qq" title="github">github</a>
                             
-                                <a class="fl github"  target="_blank" href="https://github.com" title="github">github</a>
-                            
-                                <a class="fl rss"  target="_blank" href="/atom.xml" title="rss">rss</a>
+                                <a class="fl leetcode"  target="_blank" href="https://leetcode.cn/u/yqunc" title="leetcode">leetcode</a>
                             
                                 <a class="fl QQ"  target="_blank" href="/799325279" title="QQ">QQ</a>
                             
                         </ul>
                     </nav>
                 </section>
-                
-                <section class="switch-part switch-part2">
-                    <div class="widget tagcloud" id="js-tagcloud">
-                        <a href="/tags/phote/" style="font-size: 10px;">phote</a> <a href="/tags/qq/" style="font-size: 20px;">qq</a>
-                    </div>
-                </section>
-                
-                
-                <section class="switch-part switch-part3">
-                    <div id="js-friends">
-                    
-                      <a target="_blank"  class="main-nav-link switch-friends-link" href="http://google.com">Google</a>
-                    
-                    </div>
-                </section>
-                
-                
-                
-                <section class="switch-part switch-part4">
-                
-                    <div id="js-aboutme">一只</div>
-                </section>
-                
             </div>
         </div>
     </header>
@@ -238,9 +179,9 @@
             <nav class="header-menu">
                 <ul>
                 
-                    <li><a href="/">博客首页</a></li>
+                    <li><a href="/">首页</a></li>
                 
-                    <li><a href="/archives">文章归档</a></li>
+                    <li><a href="/archives">归档</a></li>
                 
                     <li><a href="/categories">分类</a></li>
                 
@@ -252,11 +193,9 @@
             <nav class="header-nav">
                 <div class="social">
                     
-                        <a class="mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=kvH99PT39-Dn_efS5PvivOPjvPH9-w" title="mail">mail</a>
+                        <a class="github" target="_blank" href="https://github.com/qun-qq" title="github">github</a>
                     
-                        <a class="github" target="_blank" href="https://github.com" title="github">github</a>
-                    
-                        <a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+                        <a class="leetcode" target="_blank" href="https://leetcode.cn/u/yqunc" title="leetcode">leetcode</a>
                     
                         <a class="QQ" target="_blank" href="/799325279" title="QQ">QQ</a>
                     
@@ -317,14 +256,14 @@
   <div class="archive-article-inner">
     <header class="archive-article-header">
           <div class="article-meta">
-              <a href="/2023/07/30/test%20-%20%E5%89%AF%E6%9C%AC%20(3)/" class="archive-article-date">
+              <a href="/2023/07/30/test/" class="archive-article-date">
       <time datetime="2023-07-30T03:16:36.000Z" itemprop="datePublished">07-30</time>
 </a>
         </div>
          
   
     <h1 itemprop="name">
-      <a class="archive-article-title" href="/2023/07/30/test%20-%20%E5%89%AF%E6%9C%AC%20(3)/">test</a>
+      <a class="archive-article-title" href="/2023/07/30/test/">test</a>
     </h1>
   
 
@@ -387,14 +326,14 @@
   <div class="archive-article-inner">
     <header class="archive-article-header">
           <div class="article-meta">
-              <a href="/2023/07/30/test/" class="archive-article-date">
+              <a href="/2023/07/30/test%20-%20%E5%89%AF%E6%9C%AC%20(3)/" class="archive-article-date">
       <time datetime="2023-07-30T03:16:36.000Z" itemprop="datePublished">07-30</time>
 </a>
         </div>
          
   
     <h1 itemprop="name">
-      <a class="archive-article-title" href="/2023/07/30/test/">test</a>
+      <a class="archive-article-title" href="/2023/07/30/test%20-%20%E5%89%AF%E6%9C%AC%20(3)/">test</a>
     </h1>
   
 
