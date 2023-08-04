@@ -104,24 +104,7 @@
 <%- partial('share/showshare') %>
 <% } %>
 <% if (!index && post.comments){ %>
-    <% if (theme.duoshuo.on) { %>
-      <%- partial('comments/duoshuo', {
-          key: post.path,
-          title: post.title,
-          url: config.url+url_for(post.path),
-          }) %>
-    <% } else if (theme.youyan.on) { %>
-        <%- partial('comments/youyan') %>
-    <% } else if (theme.gitment.on) { %>
-        <%- partial('comments/gitment', {
-            owner: theme.gitment.owner,
-            repo: theme.gitment.repo,
-            client_id: theme.gitment.client_id,
-            client_secret: theme.gitment.client_secret,
-            desc: post.description,
-            id: post.path
-          }) %>
-    <% } else if (theme.disqus.on) { %>
+    <% if (theme.disqus.on) { %>
         <%- partial('comments/disqus', {
             shortname: theme.disqus.shortname
           }) %>

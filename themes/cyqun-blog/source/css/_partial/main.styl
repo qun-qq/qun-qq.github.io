@@ -542,11 +542,11 @@
             }
         }
     }
-    .header-subtitle{
+    .header-aboutme{
         text-align: center;
         color:#FFF;
-        font-size: 14px;
-        line-height: 25px;
+        font-size: 28px;
+        line-height: 56px;
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
@@ -584,6 +584,7 @@
         width: 100%;
         overflow: hidden;
         color: #FFF;
+        top: 12px;
         min-height: 200px;
         font-size: 14px;
         .switch-wrap{
@@ -669,6 +670,10 @@
             a.QQ {
                 background:url('../img/qq.png') center no-repeat #00ABFF;
                 border:1px solid #00ABFF;
+            }
+            a.leetcode {
+                background:url('../img/lcc.png') center no-repeat #FFFFFF;
+                border:1px solid #FFFFFF;
             }
             a.wechat {
                 background:url('../img/wechat.png') center no-repeat #51C332;
@@ -848,8 +853,9 @@
 /* search */
 #search {
     width: 68%;
-    height: 18px;
+    height: 32px;
     margin-top: 1px;
+    text-align: center;
     color: #FFF;
     padding: 0;
     font-family: inherit;
@@ -883,4 +889,17 @@
         opacity: 1;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     };
+}
+#local-search-result{
+/*    margin-top: 30px;*/
+}
+
+#search-result-title{
+    width: 50%;
+    top: 50px;
+}
+
+#search-result-list{
+    top: 10px;
+    font-size: 54px;
 }

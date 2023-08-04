@@ -4,8 +4,8 @@
 ## About Page: `hexo new page about`
 ## Tags Cloud Page: `hexo new page tags`
 menu:
-  博客首页: /
-  文章归档: /archives
+  首页: /
+  归档: /archives
   分类: /categories
   标签: /tags
 
@@ -22,19 +22,10 @@ favicon: "http://oayoilchh.bkt.clouddn.com/2016/07/27/18:05:26%20"
 ## RSS requires a plugin to take effect | 使用 RSS 需先安装对应插件
 ## https://github.com/hexojs/hexo-generator-feed
 subnav:
-  mail: "http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=kvH99PT39-Dn_efS5PvivOPjvPH9-w"
-  github: "https://github.com"
-  rss: /atom.xml
-  # facebook: "#"
-  # rss: /atom.xml
-  # pinterest: "#"
+  # mail: "http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=kvH99PT39-Dn_efS5PvivOPjvPH9-w"
+  github: "https://github.com/qun-qq"
+  leetcode: "https://leetcode.cn/u/yqunc"
   QQ: "799325279"
-  # wechat: "#"
-  # douban: "#"
-  # pinboard: "#"
-  # stackoverflow: "#"
-  # Instagram: "#"
-  # segmentfault: "#"
 
 # >>> Conments 评论系统 <<<
 # Chose ONE as your comment system and keep others disable.
@@ -42,31 +33,17 @@ subnav:
 
 disqus: 
   on: true
-  shortname: swing
+  shortname: cyq
   # https://help.disqus.com/customer/en/portal/articles/466208-what-s-a-shortname-
   # It is unnecessary to enable disqus here if 
   # you have set "disqus_shortname" in your site's "_config.yml" 
 
-duoshuo: 
-  # on: true
-  domain: luuman
-  # 是否开启多说评论，http://duoshuo.com/create-site/
-  # 使用上面网址登陆你的多说，然后创建站点，在 domain 中填入你设定的域名前半部分
-  # http://<要填的部分>.duoshuo.com (domain只填上<>里的内容，不要填整个网址)
-
 gitment:
   #on: true
-  owner: luuman
-  repo: luuman.github.io
+  owner: qun-qq
+  repo: qun-qq.github.io
   client_id: 
   client_secret: 
-
-youyan:
-  #on: true
-  id: 
-  # 是否开启友言评论，http://www.uyan.cc/index.php
-  # id 中填写你的友言用户数字ID，注册后进入后台管理即可查看
-  # 友言服务在 Web 环境下运行，普通本地环境无法查看，请部署后在线上测试。
 
 
 # >>> Style Customisation 样式自定义 <<<
@@ -126,7 +103,7 @@ local_search:
 
 # 是否开启边栏多标签切换
 # Birdhouse button in left column
-tagcloud: true
+tagcloud: false
 
 # Blogroll, Link exchange | 友情链接
 # friends: false
@@ -134,7 +111,7 @@ friends:
   Google: http://google.com
 
 #是否开启“关于我”。
-aboutme: 一只
+aboutme: 兴趣使然
 #aboutme: false
 
 # 是否在新窗口打开链接
@@ -157,7 +134,7 @@ mathjax: false
 
 # Socail Share | 是否开启分享
 # share: true
-baidushare: true
+baidushare: false
 #showshare: true
 
 # # 百度、谷歌站长验证。填写 HTML 标签 content

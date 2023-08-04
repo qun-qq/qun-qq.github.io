@@ -10,3 +10,12 @@ tags: phote
 
 ds
 
+![](part.jpg)
+
+ddd
+
+
+
+dasd
+
+![image-20230804154505779](image.png)
