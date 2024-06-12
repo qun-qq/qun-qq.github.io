@@ -6,7 +6,7 @@
   <link href="https://qun-qq.github.io/atom.xml" rel="self"/>
   
   <link href="https://qun-qq.github.io/"/>
-  <updated>2023-08-04T09:40:12.781Z</updated>
+  <updated>2023-09-11T07:54:27.712Z</updated>
   <id>https://qun-qq.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JWT</title>
+    <link href="https://qun-qq.github.io/2023/09/11/JWT/"/>
+    <id>https://qun-qq.github.io/2023/09/11/JWT/</id>
+    <published>2023-09-11T07:49:37.000Z</published>
+    <updated>2023-09-11T07:54:27.712Z</updated>
+    
+    <content type="html"><![CDATA[<p>​JWT(Json Web Token)主要用于WEB系统</p><p>#1 主要用途</p><pre><code>\1. 是</code></pre><p>\2. 有序是<br>\3. 有序列表</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;​	JWT(Json Web Token)主要用于WEB系统&lt;/p&gt;
+&lt;p&gt;#1 主要用途&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&#92;1. 是
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&#92;2. 有序是&lt;br&gt;&#92;3. 有序列表&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>markdown参考</title>
@@ -104,10 +129,10 @@
   
   <entry>
     <title>test</title>
-    <link href="https://qun-qq.github.io/2023/07/30/test/"/>
-    <id>https://qun-qq.github.io/2023/07/30/test/</id>
+    <link href="https://qun-qq.github.io/2023/07/30/test%20-%20%E5%89%AF%E6%9C%AC/"/>
+    <id>https://qun-qq.github.io/2023/07/30/test%20-%20%E5%89%AF%E6%9C%AC/</id>
     <published>2023-07-30T03:16:36.000Z</published>
-    <updated>2023-08-03T05:44:02.874Z</updated>
+    <updated>2023-08-03T05:43:57.173Z</updated>
     
     <content type="html"><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h2 id="this-is-a-test"><a href="#this-is-a-test" class="headerlink" title="this is a test"></a>this is a test</h2>]]></content>
     
@@ -128,10 +153,10 @@
   
   <entry>
     <title>test</title>
-    <link href="https://qun-qq.github.io/2023/07/30/test%20-%20%E5%89%AF%E6%9C%AC/"/>
-    <id>https://qun-qq.github.io/2023/07/30/test%20-%20%E5%89%AF%E6%9C%AC/</id>
+    <link href="https://qun-qq.github.io/2023/07/30/test/"/>
+    <id>https://qun-qq.github.io/2023/07/30/test/</id>
     <published>2023-07-30T03:16:36.000Z</published>
-    <updated>2023-08-03T05:43:57.173Z</updated>
+    <updated>2023-08-03T05:44:02.874Z</updated>
     
     <content type="html"><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h2 id="this-is-a-test"><a href="#this-is-a-test" class="headerlink" title="this is a test"></a>this is a test</h2>]]></content>
     
