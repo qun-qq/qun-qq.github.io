@@ -1,0 +1,29 @@
+<%- js({src:'vendors/bootstrap@3.3.4/dist/js/bootstrap.min.js', defer: true}) %>
+<%- js({src:'vendors/nprogress@0.2.0/nprogress.js', defer: true}) %>
+<script>
+    if (!window.kr) {
+        window.kr = {};
+    }
+    window.kr.notMobile = (!(navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)));
+    window.kr.siteRoot = "<%- url_for('/') %>";
+</script>
+<% if(theme.snow){ %>
+    <div>
+        <canvas id="snow"></canvas>
+        <%- js({src:'js/snow.min.js', async: true}) %>
+    </div>
+<% } %>
+<% if (theme.click_animate_js) { %>
+    <script async src="<%- theme.click_animate_js.includes('//') ? theme.click_animate_js : url_for('js/' + theme.click_animate_js + '.min.js') %>"></script>
+<% } %>
+
+
+<% if (page.type !== '404' && theme.fancybox){ %>
+    <%- js({src:'vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js', defer: true}) %>
+<% } %>
+<%- js({src:'js/kratosr.min.js', defer: true}) %>
+<%- js({src:'js/pjax.min.js', defer: true}) %>
+<% if (page.type !== '404' && theme.posts?.donate) { %>
+    <%- js('vendors/layui-src@2.5.5/dist/layui.all.js') %>
+<% } %>
+
