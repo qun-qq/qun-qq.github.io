@@ -13,7 +13,7 @@ check_update: false
 customStyles:
   images: # 图片相关设置
     # banner: /images/banner.webp # 站点横幅
-    # background: /images/bg.webp # 站点背景
+    # background: /images/bg.jpeg # 站点背景
 
 # Index 首页配置
 index:
@@ -45,14 +45,7 @@ group_link:
 contact: # 出于兼容性考虑，继续保留
   weibo: 
   mail: cyqun@qq.com
-  telegram:
-  twitter: 
-  facebook: 
-  linkedin: 
-  fediverse:
-    instance:
-    username:
-  github:
+  github: qun-qq
   rss:
 footerLinks: [] # 可以自定义
 timenotice: 本站已运行
@@ -62,7 +55,6 @@ psr:
 # Post Page 文章页配置
 posts:
   show_cc: true
-  donate: false
   share: true
   wordCount: 
     enable: true
