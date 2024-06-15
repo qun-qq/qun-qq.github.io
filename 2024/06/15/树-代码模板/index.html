@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <link rel="icon" href="images/myico.ico">
   
-  <title>hexo使用说明 | cyqun.top</title>
+  <title>树-代码模板 | cyqun.top</title>
   
   <meta name="author" content="CYQ" />
   <meta http-equiv="Cache-Control" content="no-transform" />
@@ -15,20 +15,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <meta name="format-detection" content="telphone=no, email=no" />
   
-    <meta name="keywords" content="hexo" />
+    <meta name="keywords" content="c++, 树" />
   
-  <meta name="description" content="环境初始化 下载安装git。。。  下载安装node.js…  把项目clone到本地  项目根目录安装hexo 123npm i hexo-cli -ghexo initnpm install  新建文章12hexo n [文章类型] &quot;文章名&quot;&amp;#x27;example: hexo n &quot;第一篇文章&quot;    部署1234hexo clean # 清除he">
+  <meta name="description" content="线段树普通写法建树。。。 123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657class NumArray &amp;#123;private:    vector&lt;int&gt; segmentTree;    int n;    void">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo使用说明">
-<meta property="og:url" content="https://qun-qq.github.io/2024/06/14/hexo%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/index.html">
+<meta property="og:title" content="树-代码模板">
+<meta property="og:url" content="https://qun-qq.github.io/2024/06/15/%E6%A0%91-%E4%BB%A3%E7%A0%81%E6%A8%A1%E6%9D%BF/index.html">
 <meta property="og:site_name" content="cyqun.top">
-<meta property="og:description" content="环境初始化 下载安装git。。。  下载安装node.js…  把项目clone到本地  项目根目录安装hexo 123npm i hexo-cli -ghexo initnpm install  新建文章12hexo n [文章类型] &quot;文章名&quot;&amp;#x27;example: hexo n &quot;第一篇文章&quot;    部署1234hexo clean # 清除he">
+<meta property="og:description" content="线段树普通写法建树。。。 123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657class NumArray &amp;#123;private:    vector&lt;int&gt; segmentTree;    int n;    void">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://qun-qq.github.io/images/myico.ico">
-<meta property="article:published_time" content="2024-06-14T06:44:15.000Z">
-<meta property="article:modified_time" content="2024-06-14T07:03:45.910Z">
+<meta property="article:published_time" content="2024-06-14T22:21:24.000Z">
+<meta property="article:modified_time" content="2024-06-14T22:37:30.144Z">
 <meta property="article:author" content="CYQ">
-<meta property="article:tag" content="hexo">
+<meta property="article:tag" content="c++">
+<meta property="article:tag" content="树">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://qun-qq.github.io/images/myico.ico">
   <link rel="alternate" href="atom.xml" type="application/atom+xml">
@@ -187,7 +188,7 @@
         <span class="toc-progress-bar" role="progressbar" aria-label="阅读进度："></span>
     </h4>
     <div class="textwidget">
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%8E%AF%E5%A2%83%E5%88%9D%E5%A7%8B%E5%8C%96"><span class="toc-text">环境初始化</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%96%B0%E5%BB%BA%E6%96%87%E7%AB%A0"><span class="toc-text">新建文章</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%83%A8%E7%BD%B2"><span class="toc-text">部署</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%8A%E4%BC%A0%E5%88%B0github"><span class="toc-text">上传到github</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BA%BF%E6%AE%B5%E6%A0%91"><span class="toc-text">线段树</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%99%AE%E9%80%9A%E5%86%99%E6%B3%95"><span class="toc-text">普通写法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ZKW%E7%BA%BF%E6%AE%B5%E6%A0%91"><span class="toc-text">ZKW线段树</span></a></li></ol></li></ol>
     </div>
 </aside>
                 
@@ -266,15 +267,15 @@
 
             <article itemscope itemtype="https://schema.org/Article">
 
-    <link itemprop="mainEntityOfPage" href="https://qun-qq.github.io/2024/06/14/hexo%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/">
+    <link itemprop="mainEntityOfPage" href="https://qun-qq.github.io/2024/06/15/%E6%A0%91-%E4%BB%A3%E7%A0%81%E6%A8%A1%E6%9D%BF/">
     <div class="kratos-hentry kratos-post-inner clearfix">
         <header class="kratos-entry-header">
             
-                <h1 class="kratos-entry-title text-center" itemprop="name headline">hexo使用说明</h1>
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">树-代码模板</h1>
             
             
             <ul class="kratos-post-meta text-center">
-                <li><time datetime="2024-06-14T06:44:15.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2024-06-14</time></li>
+                <li><time datetime="2024-06-14T22:21:24.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2024-06-15</time></li>
                 <li itemprop="author" itemscope itemtype="https://schema.org/Person">
                     <i class="fa fa-user"></i> 作者 <span itemprop="name">CYQ</span>
                 </li>
@@ -283,7 +284,7 @@
                         <i class="fa fa-edit"></i> 
                         
                         
-                            316
+                            ~2.55K
                         
                         字
                     </li>
@@ -295,37 +296,23 @@
             
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1718348625910"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1718404650144"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             
             
                 <div class="kratos-post-inner-toc toc-div-class" >
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%8E%AF%E5%A2%83%E5%88%9D%E5%A7%8B%E5%8C%96"><span class="toc-number">1.</span> <span class="toc-text">环境初始化</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%96%B0%E5%BB%BA%E6%96%87%E7%AB%A0"><span class="toc-number">2.</span> <span class="toc-text">新建文章</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%83%A8%E7%BD%B2"><span class="toc-number">3.</span> <span class="toc-text">部署</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%8A%E4%BC%A0%E5%88%B0github"><span class="toc-number">4.</span> <span class="toc-text">上传到github</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BA%BF%E6%AE%B5%E6%A0%91"><span class="toc-number">1.</span> <span class="toc-text">线段树</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%99%AE%E9%80%9A%E5%86%99%E6%B3%95"><span class="toc-number">1.1.</span> <span class="toc-text">普通写法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ZKW%E7%BA%BF%E6%AE%B5%E6%A0%91"><span class="toc-number">1.2.</span> <span class="toc-text">ZKW线段树</span></a></li></ol></li></ol>
                 </div>
             
             <hr />
-            <div itemprop="articleBody"><h1 id="环境初始化"><a href="#环境初始化" class="headerlink" title="环境初始化"></a>环境初始化</h1><ol>
-<li><p>下载安装git。。。</p>
-</li>
-<li><p>下载安装node.js…</p>
-</li>
-<li><p>把项目clone到本地</p>
-</li>
-<li><p>项目根目录安装hexo</p>
-<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm i hexo-cli -g</span><br><span class="line">hexo init</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h1 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo n [文章类型] &quot;文章名&quot;&#x27;</span><br><span class="line">example: hexo n &quot;第一篇文章&quot;</span><br></pre></td></tr></table></figure>
+            <div itemprop="articleBody"><h1 id="线段树"><a href="#线段树" class="headerlink" title="线段树"></a>线段树</h1><h2 id="普通写法"><a href="#普通写法" class="headerlink" title="普通写法"></a>普通写法</h2><p>建树。。。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">NumArray</span> &#123;</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    vector&lt;<span class="type">int</span>&gt; segmentTree;</span><br><span class="line">    <span class="type">int</span> n;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">build</span><span class="params">(<span class="type">int</span> node, <span class="type">int</span> s, <span class="type">int</span> e, vector&lt;<span class="type">int</span>&gt; &amp;nums)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (s == e) &#123;</span><br><span class="line">            segmentTree[node] = nums[s];</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="type">int</span> m = s + (e - s) / <span class="number">2</span>;</span><br><span class="line">        <span class="built_in">build</span>(node * <span class="number">2</span> + <span class="number">1</span>, s, m, nums);</span><br><span class="line">        <span class="built_in">build</span>(node * <span class="number">2</span> + <span class="number">2</span>, m + <span class="number">1</span>, e, nums);</span><br><span class="line">        segmentTree[node] = segmentTree[node * <span class="number">2</span> + <span class="number">1</span>] + segmentTree[node * <span class="number">2</span> + <span class="number">2</span>];</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">change</span><span class="params">(<span class="type">int</span> index, <span class="type">int</span> val, <span class="type">int</span> node, <span class="type">int</span> s, <span class="type">int</span> e)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (s == e) &#123;</span><br><span class="line">            segmentTree[node] = val;</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="type">int</span> m = s + (e - s) / <span class="number">2</span>;</span><br><span class="line">        <span class="keyword">if</span> (index &lt;= m) &#123;</span><br><span class="line">            <span class="built_in">change</span>(index, val, node * <span class="number">2</span> + <span class="number">1</span>, s, m);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="built_in">change</span>(index, val, node * <span class="number">2</span> + <span class="number">2</span>, m + <span class="number">1</span>, e);</span><br><span class="line">        &#125;</span><br><span class="line">        segmentTree[node] = segmentTree[node * <span class="number">2</span> + <span class="number">1</span>] + segmentTree[node * <span class="number">2</span> + <span class="number">2</span>];</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">range</span><span class="params">(<span class="type">int</span> left, <span class="type">int</span> right, <span class="type">int</span> node, <span class="type">int</span> s, <span class="type">int</span> e)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (left == s &amp;&amp; right == e) &#123;</span><br><span class="line">            <span class="keyword">return</span> segmentTree[node];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="type">int</span> m = s + (e - s) / <span class="number">2</span>;</span><br><span class="line">        <span class="keyword">if</span> (right &lt;= m) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="built_in">range</span>(left, right, node * <span class="number">2</span> + <span class="number">1</span>, s, m);</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (left &gt; m) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="built_in">range</span>(left, right, node * <span class="number">2</span> + <span class="number">2</span>, m + <span class="number">1</span>, e);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="built_in">range</span>(left, m, node * <span class="number">2</span> + <span class="number">1</span>, s, m) + <span class="built_in">range</span>(m + <span class="number">1</span>, right, node * <span class="number">2</span> + <span class="number">2</span>, m + <span class="number">1</span>, e);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="built_in">NumArray</span>(vector&lt;<span class="type">int</span>&gt;&amp; nums) : <span class="built_in">n</span>(nums.<span class="built_in">size</span>()), <span class="built_in">segmentTree</span>(nums.<span class="built_in">size</span>() * <span class="number">4</span>) &#123;</span><br><span class="line">        <span class="built_in">build</span>(<span class="number">0</span>, <span class="number">0</span>, n - <span class="number">1</span>, nums);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">update</span><span class="params">(<span class="type">int</span> index, <span class="type">int</span> val)</span> </span>&#123;</span><br><span class="line">        <span class="built_in">change</span>(index, val, <span class="number">0</span>, <span class="number">0</span>, n - <span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">sumRange</span><span class="params">(<span class="type">int</span> left, <span class="type">int</span> right)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">range</span>(left, right, <span class="number">0</span>, <span class="number">0</span>, n - <span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
 
 
-<h1 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo clean # 清除</span><br><span class="line">hexo g # 生成页面</span><br><span class="line">hexo d # 部署</span><br><span class="line">hexo s # 启动本地服务</span><br></pre></td></tr></table></figure>
-
-
-
-<h1 id="上传到github"><a href="#上传到github" class="headerlink" title="上传到github"></a>上传到github</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m &quot;修改说明&quot;</span><br><span class="line">git push origin hexo</span><br></pre></td></tr></table></figure>
-
-
+<h2 id="ZKW线段树"><a href="#ZKW线段树" class="headerlink" title="ZKW线段树"></a>ZKW线段树</h2><p>利用位运算。。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Trie</span>&#123;</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    <span class="type">int</span> tr[<span class="number">500000</span>];</span><br><span class="line">    <span class="type">int</span> n=<span class="number">1</span>;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="comment">//更新下标为index的值</span></span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">update</span><span class="params">(<span class="type">int</span> index, <span class="type">int</span> diff)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=index + n; i &gt; <span class="number">0</span> ; i &gt;&gt;= <span class="number">1</span>) tr[i] += diff;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//求闭区间[left, right]的和</span></span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">sumRange</span><span class="params">(<span class="type">int</span> left, <span class="type">int</span> right)</span> </span>&#123;</span><br><span class="line">        <span class="type">int</span> res=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=left+n,j=right+n;i&lt;=j;i&gt;&gt;=<span class="number">1</span>,j&gt;&gt;=<span class="number">1</span>)&#123;</span><br><span class="line">            <span class="keyword">if</span>(i%<span class="number">2</span>==<span class="number">1</span>) res+=tr[i++];</span><br><span class="line">            <span class="keyword">if</span>(j%<span class="number">2</span>==<span class="number">0</span>) res+=tr[j--];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//初始化</span></span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">init</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="built_in">memset</span>(tr,<span class="number">0</span>,<span class="built_in">sizeof</span>(tr));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
 </div>
         </div>
@@ -380,7 +367,7 @@
     <script type="text/javascript">
         $(()=>{
             new QRCode("wechat-qr", {
-                text: "https://qun-qq.github.io/2024/06/14/hexo%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/",
+                text: "https://qun-qq.github.io/2024/06/15/%E6%A0%91-%E4%BB%A3%E7%A0%81%E6%A8%A1%E6%9D%BF/",
                 width: 150,
                 height: 150,
                 correctLevel : QRCode.CorrectLevel.H
@@ -392,19 +379,10 @@
             const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
             const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
             const twitterBase   = "https://twitter.com/intent/tweet?";
-            const hostUrl       = "https://qun-qq.github.io/2024/06/14/hexo%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/";
-            const title         = "「hexo使用说明」";
-            const excerpt       = `环境初始化
-下载安装git。。。
-
-下载安装node.js…
-
-把项目clone到本地
-
-项目根目录安装hexo
-123npm i hexo-cli -ghexo initnpm install
-
-新建文章12hexo n [文章类型...`;
+            const hostUrl       = "https://qun-qq.github.io/2024/06/15/%E6%A0%91-%E4%BB%A3%E7%A0%81%E6%A8%A1%E6%9D%BF/";
+            const title         = "「树-代码模板」";
+            const excerpt       = `线段树普通写法建树。。。
+12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565...`;
             let _URL;
             switch (dest) {
                 case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
@@ -423,10 +401,10 @@
             <div class="footer-tag clearfix">
                 <div class="pull-left">
                 <i class="fa fa-tags"></i>
-                    <a class="tag-none-link" href="/tags/hexo/" rel="tag">hexo</a>
+                    <a class="tag-none-link" href="/tags/c/" rel="tag">c++</a>, <a class="tag-none-link" href="/tags/%E6%A0%91/" rel="tag">树</a>
                 </div>
                 <div class="pull-date">
-                    <time datetime="2024-06-14T07:03:45.910Z" itemprop="dateModified">最后编辑：2024-06-14</time>
+                    <time datetime="2024-06-14T22:37:30.144Z" itemprop="dateModified">最后编辑：2024-06-15</time>
                 </div>
             </div>
         </footer>
@@ -435,13 +413,9 @@
         <nav class="navigation post-navigation clearfix" role="navigation">
             
             <div class="nav-previous clearfix">
-                <a title=" markdown语法参考" href="/2023/08/04/markdown参考/">&lt; 上一篇</a>
+                <a title=" markdown文件插入图片" href="/2024/06/14/markdown文件插入图片/">&lt; 上一篇</a>
             </div>
             
-            
-            <div class="nav-next clearfix">
-                <a title=" 图片测试" href="/2024/06/14/图片测试/">下一篇 &gt;</a>
-            </div>
             
         </nav>
     
