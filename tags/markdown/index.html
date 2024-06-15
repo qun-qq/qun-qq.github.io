@@ -70,6 +70,12 @@
   <style>
     
     
+      @media(min-width:768px) {
+        body.custom-background {
+          background-image: url('/images/bg.jpeg');
+        }
+      }
+    
   </style>
   
 <meta name="generator" content="Hexo 6.3.0"></head>
@@ -284,15 +290,15 @@
                     <div class="kratos-entry-content-new">
                         <p itemProp="description">
                             
-                                参考：https://zhuanlan.zhihu.com/p/280758822
-
-直接粘贴图片到md文件
-
-右键保存到hexo文章对应的文件夹
-
-修改图片链接为相对路径：
-1文章名/xxx.png
-
+                                <p>参考：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/280758822">https://zhuanlan.zhihu.com/p/280758822</a></p>
+<ol>
+<li><p>直接粘贴图片到md文件</p>
+</li>
+<li><p>右键保存到hexo文章对应的文件夹</p>
+</li>
+<li><p>修改图片链接为相对路径：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">文章名/xxx.png</span><br></pre></td></tr></table></figure></li>
+</ol>
 
                             
                         </p>
@@ -333,67 +339,67 @@
                     <div class="kratos-entry-content-new">
                         <p itemProp="description">
                             
-                                https://blog.csdn.net/qq_40818172/article/details/126260661
-标题用一到六个 ‘#’ 加一个空格接标题内容
-123# text## text### text
+                                <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_40818172/article/details/126260661">https://blog.csdn.net/qq_40818172/article/details/126260661</a></p>
+<h1 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h1><p>用一到六个 ‘#’ 加一个空格接标题内容</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># text</span><br><span class="line">## text</span><br><span class="line">### text</span><br></pre></td></tr></table></figure>
 
-字体星号或下划线包裹内容，单是斜体，双是粗体，三是粗斜体
+<h1 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h1><p>星号或下划线包裹内容，单是斜体，双是粗体，三是粗斜体</p>
+<table>
+<thead>
+<tr>
+<th>写法</th>
+<th>效果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>*这是斜体*</td>
+<td><em>这是斜体</em></td>
+</tr>
+<tr>
+<td>_这是斜体_</td>
+<td>这是斜体</td>
+</tr>
+<tr>
+<td>*<em>这是粗体</em>*</td>
+<td><strong>这是粗体</strong></td>
+</tr>
+<tr>
+<td>_<em>这是粗体</em>_</td>
+<td><strong>这是粗体</strong></td>
+</tr>
+<tr>
+<td>*<strong>这是粗斜体</strong>*</td>
+<td><em><strong>这是粗斜体</strong></em></td>
+</tr>
+<tr>
+<td>_<strong>这是粗斜体</strong>_</td>
+<td><em><strong>这是粗斜体</strong></em></td>
+</tr>
+<tr>
+<td>~~这是删除线~~</td>
+<td><del>这是删除线</del></td>
+</tr>
+<tr>
+<td>&lt;u&gt;这是下划线</u></td>
+<td><u>这是下划线</u></td>
+</tr>
+</tbody></table>
+<h1 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h1><p>用 ‘|’ 字符分隔内容即可</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">|表头1|表头2|</span><br><span class="line">|t1|t2|</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
 
+<p>ctrl+enter自动添加新行</p>
+<h1 id="换行"><a href="#换行" class="headerlink" title="换行"></a>换行</h1><ul>
+<li>直接在一句话后敲两个空格</li>
+<li>两句话之间加一个空行</li>
+<li>如果你在编辑的时候，想让一行文字在显示的时候换行，就在中间加<code>&lt;br/&gt;</code></li>
+</ul>
+<p>三个  &#96;  （飘号）对应文本框，效果：</p>
+<p>`&#96;&#96;文本</p>
+<figure class="highlight cc"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">文本</span><br></pre></td></tr></table></figure>
 
+<h1 id="摘要标记符"><a href="#摘要标记符" class="headerlink" title="摘要标记符"></a>摘要标记符</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--more--&gt;</span><br></pre></td></tr></table></figure>
 
-写法
-效果
-
-
-
-*这是斜体*
-这是斜体
-
-
-_这是斜体_
-这是斜体
-
-
-*这是粗体*
-这是粗体
-
-
-_这是粗体_
-这是粗体
-
-
-*这是粗斜体*
-这是粗斜体
-
-
-_这是粗斜体_
-这是粗斜体
-
-
-~~这是删除线~~
-这是删除线
-
-
-&lt;u&gt;这是下划线
-这是下划线
-
-
-表格用 ‘|’ 字符分隔内容即可
-123|表头1|表头2||t1|t2|...
-
-ctrl+enter自动添加新行
-换行
-直接在一句话后敲两个空格
-两句话之间加一个空行
-如果你在编辑的时候，想让一行文字在显示的时候换行，就在中间加&lt;br/&gt;
-
-三个  &#96;  （飘号）对应文本框，效果：
-`&#96;&#96;文本
-1文本
-
-摘要标记符1&lt;!--more--&gt;
-
-任意位置添加，之前的内容为摘要，在hexo中可用post.excerpt获取。
+<p>任意位置添加，之前的内容为摘要，在hexo中可用post.excerpt获取。</p>
                             
                         </p>
                     </div>
@@ -444,12 +450,7 @@ ctrl+enter自动添加新行
                         <!-- Keep for compatibility -->
                         
                         <li><a href="mailto:cyqun@qq.com"><i class="fa fa-envelope"></i></a></li>
-                        
-                        
-                        
-                        
-                        
-                        
+                        <li><a target="_blank" rel="nofollow" href="https://github.com/https://github.com/qun-qq"><i class="fa fa-github"></i></a></li>
                         
                         <!-- New links -->
                         
