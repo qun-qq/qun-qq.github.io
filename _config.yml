@@ -106,9 +106,15 @@ theme: Kratos-Rebirth-2
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: git
+- type: git
   repo: https://github.com/qun-qq/qun-qq.github.io.git
   branch: main
+
+- type: git
+  repo: git@38.207.167.202:/home/git/blog.git
+  branch: master
+  message:  
+
 
 search:
   path: search.json
