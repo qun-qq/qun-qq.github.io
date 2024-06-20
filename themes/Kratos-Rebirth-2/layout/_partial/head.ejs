@@ -44,6 +44,7 @@
   <% if (config.feed?.path) {%><link rel="alternate" href="<%- config.feed.path %>" type="application/atom+xml"><% } %>
   <!-- 样式表文件 -->
   <%- css({href:'css/kratosr.min.css', id: "kratos-css", media:"all"}) %>
+  <%- css({href:'css/krtoc.css', id: "kr-toc-css", media:"all"}) %>
   <% if (theme.enable_dark) { %>
     <%- css({href:'css/kr-color-dark.min.css', id: "darkmode-css", media:"(prefers-color-scheme: dark)"}) %>
     <%- js('js/kr-dark.min.js') %>

@@ -1,0 +1,6 @@
+<% const tocContent = toc(page.encrypt ? page.origin : page.content, { list_number: false }); %>
+<section id="toc-area" class="col-md-2 hidden-xs hidden-sm">
+    <div class="sticky-area">
+        <%- partial('_widget/toc', { tocContent }) %>
+    </div>
+</section>
