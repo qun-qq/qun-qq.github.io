@@ -6,7 +6,7 @@
   <link href="https://qun-qq.github.io/atom.xml" rel="self"/>
   
   <link href="https://qun-qq.github.io/"/>
-  <updated>2024-06-15T08:55:16.337Z</updated>
+  <updated>2024-06-20T01:07:41.308Z</updated>
   <id>https://qun-qq.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>mysql使用规范</title>
+    <link href="https://qun-qq.github.io/2024/06/20/mysql%E4%BD%BF%E7%94%A8%E8%A7%84%E8%8C%83/"/>
+    <id>https://qun-qq.github.io/2024/06/20/mysql%E4%BD%BF%E7%94%A8%E8%A7%84%E8%8C%83/</id>
+    <published>2024-06-20T01:01:46.000Z</published>
+    <updated>2024-06-20T01:07:41.308Z</updated>
+    
+    <content type="html"><![CDATA[<p>转载自：<a href="https://developer.aliyun.com/article/1318440?spm=a2c6h.14164896.0.0.3e8647c58sQaQk&scm=20140722.S_community@@%E6%96%87%E7%AB%A0@@1318440._.ID_1318440-RL_%E6%8A%80%E6%9C%AF%E5%90%8C%E5%AD%A6%E5%BF%85%E4%BC%9A%E7%9A%84MySQL%E8%AE%BE%E8%AE%A1%E8%A7%84%E7%BA%A6%E9%83%BD%E6%98%AF%E6%83%A8%E7%97%9B%E7%9A%84%E6%95%99%E8%AE%AD-LOC_search~UND~community~UND~item-OR_ser-V_3-P0_0">技术同学必会的MySQL设计规约，都是惨痛的教训</a></p><p>sss</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;转载自：&lt;a href=&quot;https://developer.aliyun.com/article/1318440?spm=a2c6h.14164896.0.0.3e8647c58sQaQk&amp;scm=20140722.S_community@@%E6%96%87%E7%AB</summary>
+      
+    
+    
+    
+    <category term="笔记" scheme="https://qun-qq.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="mysql" scheme="https://qun-qq.github.io/tags/mysql/"/>
+    
+  </entry>
   
   <entry>
     <title>树-代码模板</title>
