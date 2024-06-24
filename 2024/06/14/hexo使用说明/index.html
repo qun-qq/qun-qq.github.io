@@ -494,7 +494,7 @@
                         </div>
                         <div>
                             <li>Powered by <a href="https://hexo.io" target="_blank" rel="nofollow">Hexo</a></li>
-                            <li>Hosted on https://qun-qq.github.io/2024/06/14/hexo%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/index.html</li>
+                            <li id = "hoster">Hosted on <a href="https://github.io" target="_blank">Github Pages</a></li>
                         </div>
                         <div>
                             
@@ -529,6 +529,13 @@
 </footer>
 </div>
 </div>
+<script>
+    let urltag = window.location.href.substring(7, 12);
+    if(urltag === "imiss"){
+        const lii = document.getElementById("hoster");
+        lii.parentNode.removeChild(lii);
+    }
+</script>
 
         
 <script src="/vendors/bootstrap@3.3.4/dist/js/bootstrap.min.js" defer></script>
