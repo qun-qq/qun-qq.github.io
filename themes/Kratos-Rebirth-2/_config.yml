@@ -169,19 +169,6 @@ friends:
     comments: false
     description: "友情链接~"
     updated: "2021-01-18"
-  list:
-  # - name: "猫猫①号"
-  #   bio: "喵~"
-  #   avatar: "../images/avatar.webp"
-  #   link: "https://candinya.com"
-  # - name: "猫猫②号"
-  #   bio: "喵喵~"
-  #   avatar: "../images/avatar.webp"
-  #   link: "https://candinya.com"
-  # - name: "猫猫⑨号"
-  #   bio: "咪啪~"
-  #   avatar: "../images/avatar.webp"
-  #   link: "https://candinya.com"
   verify: true # 验证每个友链的可访问性，炸了会有提示
 
 # Misc 杂项

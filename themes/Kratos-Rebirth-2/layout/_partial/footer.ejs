@@ -38,7 +38,7 @@
                         </div>
                         <div>
                             <li>Powered by <a href="https://hexo.io" target="_blank" rel="nofollow">Hexo</a></li>
-                            <% if (theme.hoster) {%><li>Hosted on <%- theme.hoster %></li><% } %>
+                            <% if (theme.hoster) {%><li id = "hoster">Hosted on <%- theme.hoster %></li><% } %>
                         </div>
                         <div>
                             <% if (theme.icp) {%><li><a href="https://beian.miit.gov.cn" rel="external nofollow" target="_blank"><%- theme.icp %></a></li><% } %>
@@ -83,3 +83,11 @@
 </footer>
 </div>
 </div>
+<script>
+    let urltag = window.location.href.substring(8, 13);
+    console.log(urltag);
+    if(urltag === "imiss"){
+        const lii = document.getElementById("hoster");
+        lii.parentNode.removeChild(lii);
+    }
+</script>
