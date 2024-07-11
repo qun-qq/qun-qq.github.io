@@ -111,7 +111,7 @@ deploy:
   branch: main
 
 - type: git
-  repo: git@38.207.167.202:/home/git/blog.git
+  repo: blog@154.26.238.74:/home/blog/hexo.git
   branch: master
   message:  
 
