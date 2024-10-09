@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <link rel="icon" href="images/myico.ico">
   
-  <title>归档 | yz</title>
+  <title>分类: 面试 | yz</title>
   
   <meta name="author" content="CYQ" />
   <meta http-equiv="Cache-Control" content="no-transform" />
@@ -18,8 +18,8 @@
     <meta name="keywords" content="" />
   
   <meta property="og:type" content="website">
-<meta property="og:title" content="归档">
-<meta property="og:url" content="https://qun-qq.github.io/archives/index.html">
+<meta property="og:title" content="分类: 面试">
+<meta property="og:url" content="https://qun-qq.github.io/categories/%E9%9D%A2%E8%AF%95/index.html">
 <meta property="og:site_name" content="yz">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://qun-qq.github.io/images/myico.ico">
@@ -258,168 +258,184 @@
 
         
 
-            
-<style>
-  .post-meta time{color:#00a7e0}
-  @media (max-width:767px){.posts-collapse{margin:0 20px}
-  .posts-collapse .post-meta,
-  .posts-collapse .post-title{display:block;width:auto;text-align:left}}
-  .posts-collapse{position:relative}
-  .posts-collapse::after{content:" ";position:absolute;top:20px;left:0;margin-left:-2px;width:4px;height:calc(100% - 35px);background:#f5f5f5;z-index:-1}
-  @media (max-width:991px){.posts-collapse{margin:0 20px}}
-  .posts-collapse .collection-title{position:relative}
-  .posts-collapse .collection-title h1,
-  .posts-collapse .collection-title h2{margin-left:20px}
-  .posts-collapse .collection-title small{color:#bbb;margin-left:5px}
-  .posts-collapse .collection-title::before{content:" ";position:absolute;left:0;top:50%;margin-left:-4px;margin-top:-4px;width:8px;height:8px;background:#bbb;border-radius:50%}
-  .posts-collapse .post-header{position:relative;transition-duration:.2s;transition-timing-function:ease-in-out;transition-delay:0s;transition-property:border}
-  .posts-collapse .post-header::before{content:" ";position:absolute;left:0;top:12px;width:6px;height:6px;margin-left:-4px;background:#bbb;border-radius:50%;border:1px solid #fff;transition: all .3s ease-in-out}
-  .posts-collapse .post-header:hover{border-bottom-color:#666}
-  .posts-collapse .post-header:hover::before{background:#222}
-  .posts-collapse .post-meta{position:absolute;font-size:12px;left:20px;top:5px}
-  .posts-collapse .post-comments-count{display:none}
-  .posts-collapse .post-title{margin-left:70px;font-size:16px;font-weight:400;line-height:inherit}
-  .posts-collapse .post-title::after{margin-left:3px;opacity:.6}
-  .posts-collapse .post-title a{color:#666;border-bottom:none}
-</style>
+            <!-- Breadcrumb for tag & category page -->
 
-  <article>
-      <div class="kratos-hentry kratos-post-inner clearfix">
-          <div class="kratos-post-content">
-            <h2 class="title-h2 text-center">文章归档</h2>
-            <div id="archives">
-              <div class="post-block archive post" style="margin-left: 2em;">
-                <h3 class="archive-page-counter">当前共有 11 篇文章</h3>
-                <div class="posts-collapse">
-                  
-                  
-                    
-                    
-                      <!-- 没遇到Title的会被自动忽略年份，即使并不一致 -->
-                      
-                      <div class="collection-title">
-                        <a href="/archives/2024/"><h2 class="archive-year">2024</h2></a>
-                      </div>
-                    
-                    
-                      <article class="post" itemscope itemtype="https://schema.org/Article">
-                        <header class="post-header">
-                          <h3 class="post-title">
+    <article class="kratos-hentry kratos-entry-border-new clearfix">
+        <div class="kratos-breadcrumb">
+            <a href="/">
+                <i class="fa fa-home"></i>
+            </a>
+            <i class="fa fa-angle-right"></i>
+            
+
+                <a href="/categories/">
+                    分类
+                </a>
+
+                
+                
+                    <i class="fa fa-angle-right"></i>
+                    <a href="/categories/%E9%9D%A2%E8%AF%95/">
+                        面试
+                    </a>
+                
+            
+            
+        </div>
+    </article>
+
+
+
+    
+    
+        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
+            <div class="kratos-entry-border-new clearfix">
+                
+
+                <div class="kratos-post-inner-new">
+                    <header class="kratos-entry-header-new">
+                            <a class="label-link" href="/categories/%E9%9D%A2%E8%AF%95/">面试</a>
+                        <h2 class="kratos-entry-title-new"><a href="/2024/10/09/Java%E5%B9%B6%E5%8F%91/" itemprop="mainEntityOfPage"><span itemprop="name headline">Java并发</span></a>
+                    </header>
+                    <div class="kratos-entry-content-new">
+                        <p itemProp="description">
                             
-                                <a class="post-title-link" href="/2024/10/09/Java%E5%B9%B6%E5%8F%91/" itemprop="mainEntityOfPage">
-                                  <span itemprop="name headline">Java并发</span>
-                                </a>
+                                <h4 id="创建线程的方式"><a href="#创建线程的方式" class="headerlink" title="创建线程的方式"></a>创建线程的方式</h4><ol>
+<li>继承<strong>Thread</strong>类</li>
+<li>实现<strong>Runnable</strong>接口</li>
+<li>实现<strong>Callable</strong>接口</li>
+<li>使用<strong>线程池</strong></li>
+</ol>
+<h4 id="sleep-和wait-的区别"><a href="#sleep-和wait-的区别" class="headerlink" title="sleep()和wait()的区别"></a>sleep()和wait()的区别</h4><ul>
+<li>sleep()是Thread类的静态本地方法，而wait()是Object类的本地方法</li>
+<li>sleep()没有释放锁，wait()会释放锁</li>
+<li>sleep()重点在于暂停当前线程，wait()重点在于线程间的交互</li>
+<li>sleep()必须指定一个时间，时间到了后线程恢复运行，wait()可以选择指定时间，若不指定时间则需要其他线程使用notify()或notifyAll()唤醒</li>
+</ul>
+<h4 id="volatile关键字"><a href="#volatile关键字" class="headerlink" title="volatile关键字"></a>volatile关键字</h4><p>在Java中将变量声明为<strong>volatile</strong>，表示此变量是多线程共享的，每次读取时都到<strong>主存</strong>中读取。</p>
+<h4 id="乐观锁和悲观锁"><a href="#乐观锁和悲观锁" class="headerlink" title="乐观锁和悲观锁"></a>乐观锁和悲观锁</h4><p>悲观锁总是假设最坏的情况，每次获取共享资源时先上锁，如果其他线程需要资源就会阻塞。例如<strong>Synchronized关键字</strong>和<strong>ReentrantLock独占锁</strong>。</p>
+<p>乐观锁总是假设最好的情况，线程获取资源时不上锁，而是在提交修改的时候去验证对应的资源是否被其他线程修改了，例如<strong>CAS算法</strong>。</p>
+<p>悲观锁适合于写操作较多，乐观锁适合于读操作较多。</p>
+
                             
-                          </h3>
-                          <div class="post-meta">
-                            <time class="post-time" itemprop="datePublished"
-                                  datetime="2024-10-09T02:52:57.000Z">
-                              10-09
-                            </time>
-                          </div>
-                        </header>
-                      </article>
-                    
-                  
-                    
-                    
-                    
-                      <article class="post" itemscope itemtype="https://schema.org/Article">
-                        <header class="post-header">
-                          <h3 class="post-title">
-                            
-                                <a class="post-title-link" href="/2024/10/05/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" itemprop="mainEntityOfPage">
-                                  <span itemprop="name headline">操作系统</span>
-                                </a>
-                            
-                          </h3>
-                          <div class="post-meta">
-                            <time class="post-time" itemprop="datePublished"
-                                  datetime="2024-10-05T03:48:26.000Z">
-                              10-05
-                            </time>
-                          </div>
-                        </header>
-                      </article>
-                    
-                  
-                    
-                    
-                    
-                      <article class="post" itemscope itemtype="https://schema.org/Article">
-                        <header class="post-header">
-                          <h3 class="post-title">
-                            
-                                <a class="post-title-link" href="/2024/07/16/c-%E7%AC%94%E8%AE%B0/" itemprop="mainEntityOfPage">
-                                  <span itemprop="name headline">c++笔记</span>
-                                </a>
-                            
-                          </h3>
-                          <div class="post-meta">
-                            <time class="post-time" itemprop="datePublished"
-                                  datetime="2024-07-16T04:01:13.000Z">
-                              07-16
-                            </time>
-                          </div>
-                        </header>
-                      </article>
-                    
-                  
-                    
-                    
-                    
-                      <article class="post" itemscope itemtype="https://schema.org/Article">
-                        <header class="post-header">
-                          <h3 class="post-title">
-                            
-                                <a class="post-title-link" href="/2024/06/20/mysql%E4%BD%BF%E7%94%A8%E8%A7%84%E8%8C%83/" itemprop="mainEntityOfPage">
-                                  <span itemprop="name headline">mysql使用规范</span>
-                                </a>
-                            
-                          </h3>
-                          <div class="post-meta">
-                            <time class="post-time" itemprop="datePublished"
-                                  datetime="2024-06-20T01:01:46.000Z">
-                              06-20
-                            </time>
-                          </div>
-                        </header>
-                      </article>
-                    
-                  
-                    
-                    
-                    
-                      <article class="post" itemscope itemtype="https://schema.org/Article">
-                        <header class="post-header">
-                          <h3 class="post-title">
-                            
-                                <a class="post-title-link" href="/2024/06/15/%E6%A0%91-%E4%BB%A3%E7%A0%81%E6%A8%A1%E6%9D%BF/" itemprop="mainEntityOfPage">
-                                  <span itemprop="name headline">树-代码模板</span>
-                                </a>
-                            
-                          </h3>
-                          <div class="post-meta">
-                            <time class="post-time" itemprop="datePublished"
-                                  datetime="2024-06-14T22:21:24.000Z">
-                              06-15
-                            </time>
-                          </div>
-                        </header>
-                      </article>
-                    
-                  
+                        </p>
+                    </div>
                 </div>
-              </div>
+                <footer class="kratos-post-meta-new">
+                    <span class="pull-left">
+                        <time datetime="2024-10-09T02:52:57.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2024-10-09</a>
+                        </time>
+                        <a>
+                            
+                                <i class="fa fa-tags"></i>
+                                <a class="tag-none-link" href="/tags/Java/" rel="tag">Java</a>
+                            
+                        </a>
+                       
+                    </span>
+                    <span class="pull-right">
+                        <a class="read-more" href="/2024/10/09/Java%E5%B9%B6%E5%8F%91/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
+                    </span>
+                </footer>
             </div>
-        </div>
-      </div>
-      
-        <div class='text-center pagination'>
-        <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="page-number" href="/archives/page/3/">3</a><a class="extend next" rel="next" href="/archives/page/2/"><i class="fa fa-angle-right"></i></a>
-        </div>
-      
-  </article>
+        </article>
+    
+
+    
+    
+        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
+            <div class="kratos-entry-border-new clearfix">
+                
+
+                <div class="kratos-post-inner-new">
+                    <header class="kratos-entry-header-new">
+                            <a class="label-link" href="/categories/%E9%9D%A2%E8%AF%95/">面试</a>
+                        <h2 class="kratos-entry-title-new"><a href="/2024/10/05/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" itemprop="mainEntityOfPage"><span itemprop="name headline">操作系统</span></a>
+                    </header>
+                    <div class="kratos-entry-content-new">
+                        <p itemProp="description">
+                            
+                                <h4 id="进程和线程"><a href="#进程和线程" class="headerlink" title="进程和线程"></a>进程和线程</h4><ul>
+<li>进程是一个程序的实例</li>
+<li>线程是轻量级进程，一个进程可以包含多个线程，同一个进程的所有线程可以共享进程的资源（内存空间、文件句柄、网络连接等），每个线程也拥有自己的资源（程序计数器、虚拟机栈、本地方法栈）</li>
+<li>线程执行开销小，不利于资源的管理和保护，进程相反</li>
+</ul>
+<h4 id="线程间同步方式"><a href="#线程间同步方式" class="headerlink" title="线程间同步方式"></a>线程间同步方式</h4><ol>
+<li>互斥锁</li>
+<li>读写锁</li>
+<li>信号量</li>
+<li>屏障</li>
+<li>事件：wait&#x2F;notify</li>
+</ol>
+<h4 id="进程的状态"><a href="#进程的状态" class="headerlink" title="进程的状态"></a>进程的状态</h4><ul>
+<li>创建状态：进程刚被创建，还未就绪</li>
+<li>就绪状态：进程处于可以运行并准备运行的状态</li>
+<li>运行状态：进程在就绪状态时被分配到cpu就会在cpu上运行，即为运行状态</li>
+<li>阻塞状态：进程因等待别的资源或IO操作而暂停运行</li>
+<li>结束状态：进程从系统中消失</li>
+</ul>
+<h4 id="进程间通信方式"><a href="#进程间通信方式" class="headerlink" title="进程间通信方式"></a>进程间通信方式</h4><ol>
+<li>管道&#x2F;匿名管道：父子进程间或兄弟进程间的通信</li>
+<li>有名管道：匿名管道由于没有名字，只能用于亲缘关系的进程间通信。为了克服这个缺点，提出了有名管道。有名管道严格遵循 <strong>先进先出(First In First Out)</strong> 。有名管道以磁盘文件的方式存在，可以实现本机任意两个进程通信。</li>
+<li>信号：信号是一种比较复杂的通信方式，用于通知接收进程某个事件已经发生</li>
+<li>消息队列：消息队列是消息的链表,具有特定的格式,存放在内存中并由消息队列标识符标识。管道和消息队列的通信数据都是先进先出的原则。与管道（无名管道：只存在于内存中的文件；命名管道：存在于实际的磁盘介质或者文件系统）不同的是消息队列存放在内核中，只有在内核重启(即，操作系统重启)或者显式地删除一个消息队列时，该消息队列才会被真正的删除。消息队列可以实现消息的随机查询,消息不一定要以先进先出的次序读取,也可以按消息的类型读取.比 FIFO 更有优势。<strong>消息队列克服了信号承载信息量少，管道只能承载无格式字 节流以及缓冲区大小受限等缺点。</strong></li>
+<li>信号量：信号量是一个计数器，用于多进程对共享数据的访问，信号量的意图在于进程间同步。这种通信方式主要用于解决与同步相关的问题并避免竞争条件。</li>
+<li>共享内存</li>
+<li>套接字</li>
+</ol>
+<h4 id="僵尸进程和孤儿进程"><a href="#僵尸进程和孤儿进程" class="headerlink" title="僵尸进程和孤儿进程"></a>僵尸进程和孤儿进程</h4><ul>
+<li>僵尸进程：子进程已经终止，但是其父进程仍在运行，且父进程没有调用 wait()或 waitpid()等系统调用来获取子进程的状态信息，释放子进程占用的资源，导致子进程的 PCB 依然存在于系统中，但无法被进一步使用。这种情况下，子进程被称为“僵尸进程”。避免僵尸进程的产生，父进程需要及时调用 wait()或 waitpid()系统调用来回收子进程。</li>
+<li>孤儿进程：一个进程的父进程已经终止或者不存在，但是该进程仍在运行。这种情况下，该进程就是孤儿进程。孤儿进程通常是由于父进程意外终止或未及时调用 wait()或 waitpid()等系统调用来回收子进程导致的。为了避免孤儿进程占用系统资源，操作系统会将孤儿进程的父进程设置为 init 进程（进程号为 1），由 init 进程来回收孤儿进程的资源。</li>
+</ul>
+<h4 id="死锁"><a href="#死锁" class="headerlink" title="死锁"></a>死锁</h4><ul>
+<li>死锁：多个进程或线程同时阻塞，都在等待资源释放。由于进程&#x2F;线程被无限阻塞，因此程序不可能正常终止。</li>
+</ul>
+<h4 id="死锁的必要条件"><a href="#死锁的必要条件" class="headerlink" title="死锁的必要条件"></a>死锁的必要条件</h4><ol>
+<li>互斥：资源不能被共享，同一时间只能有一个进程或线程使用。</li>
+<li>非抢占：资源不能被抢占，当前正在使用的进程或线程用完后才会被释放。</li>
+<li>占有并等待</li>
+<li>循环等待</li>
+</ol>
+<h4 id="如何解决死锁"><a href="#如何解决死锁" class="headerlink" title="如何解决死锁"></a>如何解决死锁</h4><p>从四个条件入手：</p>
+<ol>
+<li>解决<strong>互斥</strong>：使得资源可以同时被多个线程或进程使用，缺点是很多资源是</li>
+<li>解决<strong>非抢占</strong>：采用剥夺式调度算法，缺点是会导致资源利用率下降。</li>
+</ol>
+<p>这两种都不太适合</p>
+<ol start="3">
+<li>解决<strong>占有并等待</strong>：</li>
+</ol>
+
+                            
+                        </p>
+                    </div>
+                </div>
+                <footer class="kratos-post-meta-new">
+                    <span class="pull-left">
+                        <time datetime="2024-10-05T03:48:26.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2024-10-05</a>
+                        </time>
+                        <a>
+                            
+                                <i class="fa fa-tags"></i>
+                                <a class="tag-none-link" href="/tags/%E7%BA%BF%E7%A8%8B/" rel="tag">线程</a>
+                            
+                        </a>
+                       
+                    </span>
+                    <span class="pull-right">
+                        <a class="read-more" href="/2024/10/05/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
+                    </span>
+                </footer>
+            </div>
+        </article>
+    
+
+
+
+
+
 
 
         
