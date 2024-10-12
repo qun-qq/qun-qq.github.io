@@ -33,3 +33,34 @@ toc: true
 乐观锁总是假设最好的情况，线程获取资源时不上锁，而是在提交修改的时候去验证对应的资源是否被其他线程修改了，例如**CAS算法**。
 
 悲观锁适合于写操作较多，乐观锁适合于读操作较多。
+
+
+
+#### 线程池
+
+##### 创建方法
+
+1. 通过**ThreadPoolExecutor**构造函数传入参数创建
+2. 通过Executor框架的工具类Executors创建
+
+##### 线程池参数
+
+```
+public ThreadPoolExecutor(
+	int corePoolSize,//线程池的核心线程数量
+    int maximumPoolSize,//线程池的最大线程数
+    long keepAliveTime,//当线程数大于核心线程数时，多余的空闲线程存活的最长时间
+    TimeUnit unit,//时间单位
+    BlockingQueue<Runnable> workQueue,//任务队列，用来储存等待执行任务的队列
+    ThreadFactory threadFactory,//线程工厂，用来创建线程，一般默认即可
+    RejectedExecutionHandler handler//拒绝策略，当提交的任务过多而不能及时处理时，我们可以定制策略来处理任务) 
+```
+
+
+
+##### 拒绝策略
+
+* ThreadPoolExecutor.AbortPolicy（默认）：直接拒绝任务并抛出异常
+* ThreadPoolExecutor.CallerRunsPolicy：调用自己的线程来执行任务
+* ThreadPoolExecutor.CallerRunsPolicy：直接拒绝任务，不报异常
+* ThreadPoolExecutor.DiscardOldestPolicy：丢弃掉最早的未处理任务，把新的任务加入队列
