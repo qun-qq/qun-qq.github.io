@@ -374,6 +374,20 @@
 <h4 id="乐观锁和悲观锁"><a href="#乐观锁和悲观锁" class="headerlink" title="乐观锁和悲观锁"></a>乐观锁和悲观锁</h4><p>悲观锁总是假设最坏的情况，每次获取共享资源时先上锁，如果其他线程需要资源就会阻塞。例如<strong>Synchronized关键字</strong>和<strong>ReentrantLock独占锁</strong>。</p>
 <p>乐观锁总是假设最好的情况，线程获取资源时不上锁，而是在提交修改的时候去验证对应的资源是否被其他线程修改了，例如<strong>CAS算法</strong>。</p>
 <p>悲观锁适合于写操作较多，乐观锁适合于读操作较多。</p>
+<h4 id="线程池"><a href="#线程池" class="headerlink" title="线程池"></a>线程池</h4><h5 id="创建方法"><a href="#创建方法" class="headerlink" title="创建方法"></a>创建方法</h5><ol>
+<li>通过<strong>ThreadPoolExecutor</strong>构造函数传入参数创建</li>
+<li>通过Executor框架的工具类Executors创建</li>
+</ol>
+<h5 id="线程池参数"><a href="#线程池参数" class="headerlink" title="线程池参数"></a>线程池参数</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">public ThreadPoolExecutor(</span><br><span class="line">	int corePoolSize,//线程池的核心线程数量</span><br><span class="line">    int maximumPoolSize,//线程池的最大线程数</span><br><span class="line">    long keepAliveTime,//当线程数大于核心线程数时，多余的空闲线程存活的最长时间</span><br><span class="line">    TimeUnit unit,//时间单位</span><br><span class="line">    BlockingQueue&lt;Runnable&gt; workQueue,//任务队列，用来储存等待执行任务的队列</span><br><span class="line">    ThreadFactory threadFactory,//线程工厂，用来创建线程，一般默认即可</span><br><span class="line">    RejectedExecutionHandler handler//拒绝策略，当提交的任务过多而不能及时处理时，我们可以定制策略来处理任务) </span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="拒绝策略"><a href="#拒绝策略" class="headerlink" title="拒绝策略"></a>拒绝策略</h5><ul>
+<li>ThreadPoolExecutor.AbortPolicy（默认）：直接拒绝任务并抛出异常</li>
+<li>ThreadPoolExecutor.CallerRunsPolicy：调用自己的线程来执行任务</li>
+<li>ThreadPoolExecutor.CallerRunsPolicy：直接拒绝任务，不报异常</li>
+<li>ThreadPoolExecutor.DiscardOldestPolicy：丢弃掉最早的未处理任务，把新的任务加入队列</li>
+</ul>
 
                             
                         </p>
@@ -457,12 +471,17 @@
 </ol>
 <h4 id="如何解决死锁"><a href="#如何解决死锁" class="headerlink" title="如何解决死锁"></a>如何解决死锁</h4><p>从四个条件入手：</p>
 <ol>
-<li>解决<strong>互斥</strong>：使得资源可以同时被多个线程或进程使用，缺点是很多资源是</li>
+<li>解决<strong>互斥</strong>：使得资源可以同时被多个线程或进程使用，缺点是很多资源是必须独享的</li>
 <li>解决<strong>非抢占</strong>：采用剥夺式调度算法，缺点是会导致资源利用率下降。</li>
 </ol>
 <p>这两种都不太适合</p>
 <ol start="3">
-<li>解决<strong>占有并等待</strong>：</li>
+<li>解决<strong>占有并等待</strong>和<strong>循环等待</strong>：<ul>
+<li>静态分配：让进程或线程执行前先获取到所有需要的资源，缺点是会降低资源利用率</li>
+<li>层次分配：</li>
+<li>使用算法（例如<strong>银行家算法</strong>）判断线程是否安全，若能够进入到安全的状态，则就 <strong>真的分配资源给该进程</strong></li>
+</ul>
+</li>
 </ol>
 
                             
