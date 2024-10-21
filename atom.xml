@@ -6,7 +6,7 @@
   <link href="https://qun-qq.github.io/atom.xml" rel="self"/>
   
   <link href="https://qun-qq.github.io/"/>
-  <updated>2024-10-09T03:27:02.687Z</updated>
+  <updated>2024-10-21T03:39:36.756Z</updated>
   <id>https://qun-qq.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>数据库</title>
+    <link href="https://qun-qq.github.io/2024/10/21/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    <id>https://qun-qq.github.io/2024/10/21/%E6%95%B0%E6%8D%AE%E5%BA%93/</id>
+    <published>2024-10-21T02:46:51.000Z</published>
+    <updated>2024-10-21T03:39:36.756Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="三大范式"><a href="#三大范式" class="headerlink" title="三大范式"></a>三大范式</h4><ol><li>第一范式<strong>1NF</strong>：数据库表中所有字段不可再分</li><li>第一范式<strong>2NF</strong>：在第一范式基础上，表中所有字段都完全依赖于主键，不存在部分依赖</li><li>第一范式<strong>2NF</strong>：在第二范式基础上，表中所有字段都直接依赖于主键，不存在间接依赖（传递依赖）</li></ol><h4 id="索引类型"><a href="#索引类型" class="headerlink" title="索引类型"></a>索引类型</h4><ul><li>按底层数据结构划分：<ul><li>B-Tree索引</li><li>哈希索引</li><li>R-Tree索引</li><li>全文索引</li></ul></li><li>按数据存储方式划分<ul><li>聚簇索引</li><li>非聚簇索引</li></ul></li><li>按应用类型划分<ul><li>主键索引</li><li>普通索引</li><li>唯一索引：用于保证列值唯一</li><li>联合索引：多个列组成一个索引</li><li>覆盖索引：组成索引的字段覆盖了需要查询的字段</li><li>全文索引</li></ul></li></ul><h4 id="事务中出现的问题"><a href="#事务中出现的问题" class="headerlink" title="事务中出现的问题"></a>事务中出现的问题</h4><ul><li>脏读：事务A先修改再回滚，事务B在事务A回滚之前读，读到的就是脏数据</li><li>丢失修改：事务A和事务B同时读取并修改一个数据（例如A&#x3D;A-1），其中一个事务的修改会被覆盖，从而丢失</li><li>不可重复读：事务A多次读一个数据，事务B在中间<strong>修改</strong>或<strong>删除</strong>数据导致事务A前后读取的数据不一致</li><li>幻读：事务A多次读一个数据，事务B在中间<strong>插入</strong>数据导致事务A读到的数据变多</li></ul><h2 id="隔离级别"><a href="#隔离级别" class="headerlink" title="隔离级别"></a>隔离级别</h2><ul><li>读取未提交：可能导致脏读、幻读、不可重复读</li><li>读取已提交：可能导致幻读、不可重复读</li><li>可重复读：可能导致幻读</li><li>串行化：</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h4 id=&quot;三大范式&quot;&gt;&lt;a href=&quot;#三大范式&quot; class=&quot;headerlink&quot; title=&quot;三大范式&quot;&gt;&lt;/a&gt;三大范式&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;第一范式&lt;strong&gt;1NF&lt;/strong&gt;：数据库表中所有字段不可再分&lt;/li&gt;
+&lt;li&gt;第一范式&lt;str</summary>
+      
+    
+    
+    
+    <category term="面试" scheme="https://qun-qq.github.io/categories/%E9%9D%A2%E8%AF%95/"/>
+    
+    
+    <category term="mysql" scheme="https://qun-qq.github.io/tags/mysql/"/>
+    
+  </entry>
   
   <entry>
     <title>Java并发</title>
